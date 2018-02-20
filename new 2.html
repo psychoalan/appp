@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Smart Lighting Alarm</title>
+		<script type="text/javascript" src="projectjavascript.js"></script>
+		<meta charset='UFT-8' name='viewport' content='width=device-width, initial=scale=1.0' >
+        <meta name="format-detection" content="telephone=no" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>	
+		<link rel = "stylesheet" type ="text/css" href = "format.css">
+	</head>
+	
+	<body>
+	<header> 
+		<h1 style="font-size:70" align="center">ALARM</h1>
+	</header>
+		<div id='main-container'>
+			<h2 id='clock'></h2>
+		</div>
+
+		<div id='alarm-container'>
+				<label>
+					<div>
+					<select id='alarmhrs' ></select>
+					</div>
+				</label>
+				<br>
+				<label>
+					<div>
+					<select id='alarmmins' ></select>
+					</div>
+				</label>
+				<br>
+				<label>
+					<div>
+					<select id='alarmsecs' ></select>
+					</div>
+				</label>
+				<br>
+				<label>
+					<div>
+						<select id="ampm">
+							<option value="AM">AM</option>
+							<option value="PM">PM</option>
+						</select>
+					</div>
+		<div id = 'button'>
+			<button id = 'buttonSet' onclick= 'alarmSet()'> SET </button>
+			<button id = 'buttonOff' onclick= 'alarmClear()'> OFF </button>
+		</div>
+	</body>
+	</html>
